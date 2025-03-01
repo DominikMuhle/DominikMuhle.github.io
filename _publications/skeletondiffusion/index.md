@@ -1,14 +1,14 @@
 ---
 layout: publications
 permalink: /publications/skeletondiffusion/
-# external_link:  https://ceveloper.github.io/CeciliaCurreli.github.io//publications/skeletondiffusion/
-date: 2024_08_27 # determines sorting just take the date of the first publication as YYYY_MM_DD
+external_link: https://ceveloper.github.io/publications/skeletondiffusion
+date: 2025_03_01 # determines sorting just take the date of the first publication as YYYY_MM_DD
 image: /assets/teaser.gif
-# image_mouseover: /assets/header_vid.mp4
+image_mouseover: /assets/header_vid.mp4
 # icon: /assets/favicon.ico
 
 title: "Nonisotropic Gaussian Diffusion for Realistic 3D Human Motion Prediction"
-# venue: preprint
+venue: CVPR, 2025
 authors:
   - name: ceciliacurreli
     affiliations: "1,2"
