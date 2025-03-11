@@ -1,10 +1,10 @@
 ---
 layout: publications
 permalink: /publications/anycam/
-# external_link: https://ceveloper.github.io/publications/skeletondiffusion
+external_link: https://fwmb.github.io/anycam/
 date: 2025_03_02 # determines sorting just take the date of the first publication as YYYY_MM_DD
-image: /assets/teaser.pdf
-image_mouseover: /assets/architecture.pdf
+image: /static/images/teaser.png
+# image_mouseover: /assets/architecture.pdf
 # icon: /assets/favicon.ico
 
 title: "AnyCam: Learning to Recover Camera Poses and Intrinsics from Casual Videos"

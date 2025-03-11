@@ -1,0 +1,28 @@
+<style>
+.media-preview {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.media-preview .overlay {
+  display: none;
+  position: absolute;
+  top: 0; left: 0;
+}
+.media-preview:hover .overlay {
+  display: block;
+}
+.media-preview.has-second:hover > img,
+.media-preview.has-second:hover > iframe {
+  visibility: hidden;
+}
+</style>
+
+<div class="media-preview{% if include.media2 %} has-second{% endif %}">
+    <img src="{{ include.media1 }}" width="300" alt="Media1">
+  {% if include.media2 %}
+    <div class="overlay">
+        <img src="{{ include.media2 }}" width="300" alt="Media2">
+    </div>
+  {% endif %}
+</div>

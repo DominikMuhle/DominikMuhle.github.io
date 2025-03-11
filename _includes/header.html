@@ -4,7 +4,7 @@
             <div class="columns is-centered">
                 <div class="column has-text-centered">
                     <h1 class="title is-1 publication-title">{{ page.title }}</h1>
-                    <div class="is-size-4 publication-authors"><span class="author-block">{{ page.venue }}</span></div>
+                    <div class="is-size-4 publication-venue"><span class="author-block">{{ page.venue }}</span></div>
                     <div class="is-size-5 publication-authors">
                         <div tyle="justify-content: space-between;">
                             {% for author_id in page.authors %}
@@ -19,8 +19,12 @@
                                     author.middle_name }} {{ author.last_name }}</a><sup>{% if
                                     author_id.equal_contribution != nil %}*{% endif %}{{ author_id.affiliations }}</sup>
                             </span>
+                            {% unless forloop.last %}
+                            <span>&nbsp;&nbsp;</span>
+                            {% endunless %}
                             {% endfor %}
                         </div>
+                    </div>
                     <div class="is-size-5 publication-affiliations">
                         {% assign i = 1 %}
                         {% for aff_id in page.affiliations %}
@@ -29,6 +33,9 @@
                             <sup>{{i}}</sup>{{affiliation[aff_id.length]}}
                         </span>
                         {% assign i = i|plus:1 %}
+                        {% unless forloop.last %}
+                        <span>&nbsp;&nbsp;</span>
+                        {% endunless %}
                         {% endfor %}
                     </div>
                     <div class="column has-text-centered">
@@ -55,5 +62,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </section>

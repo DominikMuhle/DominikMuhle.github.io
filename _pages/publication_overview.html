@@ -15,7 +15,7 @@ author_profile: false
     <link rel="stylesheet" href="/assets://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="/assets/css/slider-component.css">
     <link rel="stylesheet" href="/assets/css/index.css">
-  </head>
+</head>
 
 <section class="section">
     <div class="container is-max-desktop">
@@ -27,8 +27,16 @@ author_profile: false
                     {% assign base_link = publication.external_link %}
                 {% else %}
                     {% assign base_link = publication.permalink %}
-                {% endif %} 
-                {% if publication.image_mouseover contains "mp4" %}
+                {% endif %}
+                {% if publication.image_mouseover == nil %}
+                    {% assign image_mouseover = publication.image %}
+                {% else %}
+                    {% assign image_mouseover = publication.image_mouseover %}
+                {% endif %}
+                {% assign image = base_link | append: publication.image %}
+                {% assign image_mouseover = base_link | append: image_mouseover %}
+                {% include preview.html media1=image media2=image_mouseover %}
+                <!-- {% if publication.image_mouseover contains "mp4" %}
                 <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
                     <video autoplay preload playsinline class="" height="100%" loop muted width="100%">
                     <source src="{{ base_link }}{{ publication.image_mouseover }}" type="video/mp4">
@@ -38,7 +46,7 @@ author_profile: false
                 </div>
                 {% else %}
                     <img width="100%" src="{{base_link}}{{ publication.image }}" onmouseover="this.src='{{base_link}}{{ publication.image_mouseover }}';" onmouseout="this.src='{{base_link}}{{ publication.image }}';" style="display: inline-block;"/>
-                {% endif %}
+                {% endif %} -->
             </div>     
             <div class="column">
                 <div class="content">

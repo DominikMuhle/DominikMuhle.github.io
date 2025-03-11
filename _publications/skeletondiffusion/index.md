@@ -4,7 +4,7 @@ permalink: /publications/skeletondiffusion/
 external_link: https://ceveloper.github.io/publications/skeletondiffusion
 date: 2025_03_01 # determines sorting just take the date of the first publication as YYYY_MM_DD
 image: /assets/teaser.gif
-image_mouseover: /assets/header_vid.mp4
+image_mouseover:  /assets/teaser_image.png
 # icon: /assets/favicon.ico
 
 title: "Nonisotropic Gaussian Diffusion for Realistic 3D Human Motion Prediction"
