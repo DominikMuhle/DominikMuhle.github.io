@@ -160,3 +160,19 @@ Includes are supposed to provide reusable templates to make content sections mor
 Jekyll allows to pass arguments to the includes that can be used in the `hmtl` code as you can see in the example. In this case, since a `.js` script is needed for this component, we have to add the script at the end of our `content.html` as well. Also be mindful, that the `slider-component.css` file is alread included in the `publications.html` file. (There should probably be a cleaner solution for this.)
 
 If you want to add your own reusable components you can just add them to the `includes` directory. (Cleaning up would be important at some point.)
+
+
+## Dataformats
+
+### Videos
+
+The standard format for videos should be `.webm` as it is supported by most browsers. However, you can also use `.mp4` files. To convert either `.mp4` or `.mov` files to `.webm` you can use the following command
+
+```bash
+# ffmpeg -i {input}.mp4 -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus {output}.webm
+ffmpeg  -i {input}.mp4  -b:v 0  -crf 30  -pass 1  -an -f webm -y /dev/null
+ffmpeg  -i {input}.mp4  -b:v 0  -crf 30  -pass 2 {output}.webm
+ffmpeg -i {input}.gif -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus {output}.webm
+```
+A [two pass solution](https://video.stackexchange.com/questions/19590/convert-mp4-to-webm-without-quality-loss-with-ffmpeg) produced larger but better results.
+Change the `-crf` value to change the quality [lower => better](https://stackoverflow.com/questions/47510489/ffmpeg-convert-mp4-to-webm-poor-results).

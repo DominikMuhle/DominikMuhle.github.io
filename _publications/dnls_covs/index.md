@@ -1,9 +1,9 @@
 ---
 layout: publications
-permalink: /publications/dnls_covs/
+permalink: /_publications/dnls_covs/
 date: 2023_05_29 # determines sorting just take the date of the first publication as YYYY_MM_DD
 image: assets/teaser.png
-image_mouseover: assets/header_vid.mp4
+image_mouseover: assets/header_vid.webm
 icon: assets/favicon.ico
 
 title: "Learning Correspondence Uncertainty via Differentiable Nonlinear Least Squares"

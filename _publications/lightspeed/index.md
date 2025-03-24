@@ -1,10 +1,9 @@
 ---
 layout: publications
 permalink: /publications/lightspeed/
-external_link: https://reginehartwig.github.io/publications/lightspeed/
+external_link: https://reginehartwig.github.io/publications/geco/
 date: 2024_12_01 # determines sorting just take the date of the first publication as YYYY_MM_DD
-image: assets/teaser.png
-image_mouseover: assets/architecture.png
+image: assets/pline3.png
 
 title: "Lightspeed Computation of Geometry-aware Semantic Embeddings"
 venue: TBD, 2025
