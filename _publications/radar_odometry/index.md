@@ -15,7 +15,7 @@ authors:
   - name: franzkaschner
     affiliations: "3,4"
     equal_contribution: True
-  - matthiaszeller:
+  - name: matthiaszeller
     affiliations: "1,2"
   - name: dominikmuhle
     affiliations: "4,5"
@@ -34,7 +34,7 @@ affiliations:
     length: long
   - name: roboticsbonn
     length: short
-  - audi:
+  - name: audi
     length: short
   - name: tum
     length: short
