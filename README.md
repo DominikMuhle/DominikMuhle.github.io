@@ -169,10 +169,19 @@ If you want to add your own reusable components you can just add them to the `in
 The standard format for videos should be `.webm` as it is supported by most browsers. However, you can also use `.mp4` files. To convert either `.mp4` or `.mov` files to `.webm` you can use the following command
 
 ```bash
-# ffmpeg -i {input}.mp4 -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus {output}.webm
-ffmpeg  -i {input}.mp4  -b:v 0  -crf 30  -pass 1  -an -f webm -y /dev/null
-ffmpeg  -i {input}.mp4  -b:v 0  -crf 30  -pass 2 {output}.webm
-ffmpeg -i {input}.gif -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus {output}.webm
+./video2webm.bash {input} {crf e.g. 30}
 ```
-A [two pass solution](https://video.stackexchange.com/questions/19590/convert-mp4-to-webm-without-quality-loss-with-ffmpeg) produced larger but better results.
-Change the `-crf` value to change the quality [lower => better](https://stackoverflow.com/questions/47510489/ffmpeg-convert-mp4-to-webm-poor-results).
+
+### Images
+
+The standard format should be `.png` or `.svg`. To convert `.pdf` files to `.svg` you can use the following command
+
+```bash
+inkscape --export-type="svg" {input}.pdf
+```
+
+For macOS you probably need to pass the whole inkscape path with
+
+```bash
+/Applications/Inkscape.app/Contents/MacOS/inkscape --export-type="svg" {input}.pdf
+```

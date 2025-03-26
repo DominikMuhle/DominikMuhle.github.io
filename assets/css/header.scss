@@ -1,0 +1,113 @@
+body {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif ;
+    background-color: #FFF;
+    color : #000;
+}
+
+.header-title {
+    width: fit-content;
+    font-weight: 400;
+
+    color: #555;
+}
+
+.header-venue {
+    color: #000;
+}
+    
+.header-venue-emph {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16pt;
+    color: firebrick;
+    padding-left: 0.25em;
+}
+    
+.header-awards {
+    color: firebrick;
+    width: fit-content;
+}
+    
+.header-authors { 
+    font-size: 14pt;
+    .author-block {
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+
+    .author-me {
+        color: #000;
+        font-weight: 700;
+    }
+    
+    // a {
+    //     // blue color for author links
+    //     // color: #
+    // }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.link-block {
+    align-items: center;
+    a {
+        color: #FFF;
+
+        & :visited {
+            color: #FFF;
+        }
+        & :hover {
+            color: #235e70;
+        }
+
+        .icon {
+            color: #FFF;
+
+            & :visited {
+                color: #FFF;
+            }
+            & :hover {
+                color: #FFF;
+            }
+        }
+
+        .publication-link {
+            color: #FFF;
+            & :visited {
+                color: #FFF;
+            }
+            & :hover {
+                color: #235e70;
+            }
+        }
+    }
+}
+
+// .header-links {
+//     // font-size: 14pt;
+//     margin: 0;
+//     margin-top: 0;
+
+//     color: #FFF;
+//     & :visited {
+//         color: #FFF;
+//     }
+//     & :hover {
+//         color: #235e70;
+//     }
+
+//     a {
+//         // color: #FFF;
+//         margin-top: 5px;
+//         margin-bottom: 5px;
+//         & :visited {
+//             color: #FFF;
+//         }
+//         .icon {
+//             // color: #FFF;
+//             margin: auto;
+//         }
+//     }
+// }

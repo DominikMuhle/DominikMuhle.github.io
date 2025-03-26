@@ -1,20 +1,18 @@
 {% if page.citation != nil %}
-<section class="hero teaser">
-    <div class="container is-max-desktop">
-        <div class="hero-body">
-            <!-- citation -->
-            <h2>Citation <a onclick="CopyToClipboard('{{page.citation}}')" class="btn btn--primary">
-                    <i class="fa fa-copy"></i>
-                </a></h2>
-            <pre>
+<section class="hero teaser is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- citation -->
+      <h2>Citation <a onclick="CopyToClipboard('{{page.citation}}')" class="btn btn--primary"><i class="fa fa-copy"></i></a></h2>
+      <pre class="hero teaser is-light">
 <code id="citation_block">
 </code>
-          </pre>
-            <script src="{{ site.baseurl }}{% link js/copy_to_clipboard.js %}"></script>
-            <script>
-                document.getElementById("citation_block").innerHTML = formateCitationHTML("{{page.citation}}");
-            </script>
-        </div>
+      </pre>
+      <script src="{{ site.baseurl }}{% link js/copy_to_clipboard.js %}"></script>
+      <script>
+        document.getElementById("citation_block").innerHTML = formateCitationHTML("{{page.citation}}");
+      </script>
     </div>
+  </div>
 </section>
 {% endif %}

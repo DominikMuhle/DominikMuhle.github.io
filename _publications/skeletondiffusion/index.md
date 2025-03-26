@@ -1,10 +1,10 @@
 ---
 layout: publications
 permalink: /publications/skeletondiffusion/
-external_link: https://ceveloper.github.io/publications/skeletondiffusion/
+# external_link: https://ceveloper.github.io/publications/skeletondiffusion/
 date: 2025_03_01 # determines sorting just take the date of the first publication as YYYY_MM_DD
-image: assets/teaser.gif
-image_mouseover:  assets/teaser_image.png
+image: assets/teaser.webm
+image_mouseover: assets/teaser_image.png
 # icon: /assets/favicon.ico
 
 title: "Nonisotropic Gaussian Diffusion for Realistic 3D Human Motion Prediction"
@@ -29,7 +29,7 @@ affiliations:
     length: long
 
 
-description: "SkeletonDiffusion is a novel nonisotropic diffusion approach for 3D Human Motion Prediction, and the first computer vision method to show that nonisotropic diffusion leads to unequivocally better performance without computational drawbacks for a structured task. We generate diverse and realistic motions achieving state-of-the-art performance on the Human3.6M and AMASS datasets."
+description: "SkeletonDiffusion is a novel nonisotropic diffusion approach for 3D Human Motion Prediction, and the first computer vision method to show to use nonisotropic diffusion. We generate diverse and realistic motions achieving state-of-the-art performance."
 
 links:
     - name: Project Page

@@ -42,6 +42,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - video2webm.bash
 
 plugins:
   # - jekyll-remote-theme
