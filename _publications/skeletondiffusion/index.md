@@ -45,10 +45,8 @@ citation: '@article{curreli2025nonisotropic,
   title={Nonisotropic Gaussian Diffusion for Realistic 3D Human Motion Prediction},
   author={Curreli, Cecilia and Muhle, Dominik and Saroha, Abhishek and Ye, Zhenzhang and Marin, Riccardo and Cremers, Daniel},
   journal={arXiv preprint arXiv:2501.06035},
-  year={2025},
-  url={https://arxiv.org/abs/2501.06035},
-  eprinttype={arXiv},
-  eprintclass={cv.CV},
-}'
+  year={2025}
+}
+'
 acknowledgements: 'This work was supported by the ERC Advanced Grant SIMULACRON. Thanks to Dr. Almut Sophia Koepke, Yuesong Shen and Shenhan Qian for the proofreading and feedback, Lu Sang for the discussion, Stefania Zunino and the whole CVG team for the support.'
 ---

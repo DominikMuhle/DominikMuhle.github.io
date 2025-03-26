@@ -1,0 +1,76 @@
+body {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  background-color: #FFF;
+  color: #000;
+}
+
+.header-title {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 400;
+  color: #555;
+}
+
+.header-venue {
+  color: #000;
+}
+
+.header-venue-emph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16pt;
+  color: firebrick;
+  padding-left: 0.25em;
+}
+
+.header-awards {
+  color: firebrick;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header-authors {
+  font-size: 14pt;
+}
+.header-authors .author-block {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+.header-authors .author-me {
+  color: #000;
+  font-weight: 700;
+}
+.header-authors a:hover {
+  text-decoration: underline;
+}
+
+.link-block {
+  align-items: center;
+}
+.link-block a {
+  color: #FFF;
+}
+.link-block a :visited {
+  color: #FFF;
+}
+.link-block a :hover {
+  color: #235e70;
+}
+.link-block a .icon {
+  color: #FFF;
+}
+.link-block a .icon :visited {
+  color: #FFF;
+}
+.link-block a .icon :hover {
+  color: #FFF;
+}
+.link-block a .publication-link {
+  color: #FFF;
+}
+.link-block a .publication-link :visited {
+  color: #FFF;
+}
+.link-block a .publication-link :hover {
+  color: #235e70;
+}/*# sourceMappingURL=header.css.map */

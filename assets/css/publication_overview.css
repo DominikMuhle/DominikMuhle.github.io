@@ -1,0 +1,126 @@
+.publication-block {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  background-color: #FFF;
+  min-width: 700px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: rgba(38, 57, 77, 0.7) 0px 20px 30px -10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.publication-block .publication-media {
+  min-width: 200px;
+  max-width: 300px;
+  width: 100%;
+  overflow: hidden;
+  font-size: 5;
+  position: relative;
+}
+.publication-block .publication-media .base-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 100%;
+  transition: opacity 0.5s ease;
+}
+.publication-block .publication-media .base-media img {
+  width: 100%;
+}
+.publication-block .publication-media .overlay-media {
+  opacity: 0%;
+  transition: opacity 0.5s ease;
+}
+.publication-block .publication-media .overlay-media img {
+  width: 100%;
+}
+.publication-block .publication-media:hover .overlay-media {
+  opacity: 100%;
+}
+.publication-block .publication-media:hover .base-media {
+  opacity: 0%;
+}
+.publication-block .publication-data {
+  flex: 1;
+  min-width: 500px;
+  color: #000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.publication-block .publication-data .publication-title {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  font-weight: 600;
+  font-size: 20pt;
+}
+.publication-block .publication-data .publication-title a {
+  color: #000;
+}
+.publication-block .publication-data .publication-title a:hover {
+  text-decoration: underline;
+}
+.publication-block .publication-data .publication-venue {
+  color: #555;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16pt;
+  margin-top: 0;
+}
+.publication-block .publication-data .publication-venue-emph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16pt;
+  color: firebrick;
+  padding-left: 0.25em;
+}
+.publication-block .publication-data .publication-awards {
+  color: firebrick;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.publication-block .publication-data .publication-authors {
+  font-size: 14pt;
+}
+.publication-block .publication-data .publication-authors .author-block {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+.publication-block .publication-data .publication-authors .author-me {
+  color: #000;
+  font-weight: 700;
+}
+.publication-block .publication-data .publication-authors a {
+  color: #000 !important;
+}
+.publication-block .publication-data .publication-authors a:hover {
+  text-decoration: underline;
+}
+.publication-block .publication-data .publication-mousecell {
+  position: relative;
+  font-size: 0;
+}
+.publication-block .publication-data .publication-mousecell {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+.publication-block .publication-data .publication-mousecell video {
+  display: none;
+}
+.publication-block .publication-data .publication-description {
+  color: #000;
+  font-size: 14pt;
+  margin: 0.5em 0;
+}
+.publication-block .publication-data .publication-links {
+  margin: 0 !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+.publication-block .publication-data .publication-links .publication-link {
+  font-size: 14pt;
+  margin: 0 !important;
+  margin-top: 0.5em !important;
+}/*# sourceMappingURL=publication_overview.css.map */
