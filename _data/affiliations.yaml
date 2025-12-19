@@ -25,3 +25,9 @@ roboticsbonn:
 lamarr:
   long: Lamarr Institute for Machine Learning and Artificial Intelligence
   short: Lamarr Institute for ML and AI
+fraunhoferivi:
+  long: Fraunhofer Institute for Transportation and Infrastructure Systems IVI
+  short: Fraunhofer IVI
+se3labs:
+  long: SE3 Labs
+  short: SE3 Labs
