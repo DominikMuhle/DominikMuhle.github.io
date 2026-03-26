@@ -120,19 +120,25 @@ body {
 }
 
 // Publication overview styles
-.publication-block {
+.publication-card {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #FFF;
     min-width: 700px;
-    padding: 24px;
+    padding: 32px 24px; // Add more vertical padding
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    margin-bottom: 24px;
+    margin: 0; // Reset shorthand margin
+    margin-bottom: 48px; // Explicit vertical spacing
 
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto 16px auto; // Reset bottom margin to 16px
         .publication-media {
+          height: 300px; // Set explicit height for the media container
+          margin-bottom: 16px; // Add spacing below media
+          margin: 0 auto;      // Center media horizontally
+          max-width: 100%;    // Ensure it spans the card width 
         min-width: 200px;
         max-width: 300px;
         width: 100%;
@@ -214,6 +220,10 @@ body {
     }
 
     .publication-data {
+    .publication-description {
+        max-height: 120px; // Set max height for descriptions
+        overflow-y: auto; // Enable vertical scrolling for overflow
+    }
         flex: 1;
         min-width: 500px;
         color: #000;

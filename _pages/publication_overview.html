@@ -19,7 +19,7 @@ author_profile: false
         <div class="container">
             {% assign sorted = site.publications | reverse %}
             {% for publication in sorted %}
-            <div class="publication-block">
+            <div class="publication-card">
                 {% if publication.external_link != nil %}
                     {% assign base_link = publication.external_link %}
                 {% else %}
