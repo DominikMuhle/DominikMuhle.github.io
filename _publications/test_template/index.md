@@ -1,6 +1,7 @@
 ---
 layout: publications
 permalink: /publications/test_template/
+published: false
 external_link: https://example.com/publication
 date: 2026_03_26
 image: /assets/teaser.png
