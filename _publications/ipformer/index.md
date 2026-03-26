@@ -23,7 +23,7 @@ authors:
     affiliations: "1,2"
   - name: danielcremers
     affiliations: "2"
-  - henrimees:
+  - name: henrimees
     affiliations: "1"
 
 affiliations:

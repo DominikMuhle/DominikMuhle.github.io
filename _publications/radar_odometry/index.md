@@ -3,7 +3,7 @@ layout: publications
 permalink: /publications/radar_odometry/
 # external_link: https://abhi-rf.github.io/publications/gss/
 date: 2025_01_30 # determines sorting just take the date of the first publication as YYYY_MM_DD
-image: assets/teaser.png
+image: /assets/teaser.png
 image_mouseover: assets/architecture.png
 
 title: "Ground-Aware Automotive Radar Odometry"

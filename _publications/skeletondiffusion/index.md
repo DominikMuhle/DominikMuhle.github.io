@@ -3,7 +3,7 @@ layout: publications
 permalink: /publications/skeletondiffusion/
 # external_link: https://ceveloper.github.io/publications/skeletondiffusion/
 date: 2025_03_01 # determines sorting just take the date of the first publication as YYYY_MM_DD
-image: assets/teaser.webm
+image: /assets/teaser.webm
 image_mouseover: assets/teaser_image.png
 # icon: /assets/favicon.ico
 

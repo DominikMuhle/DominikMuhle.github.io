@@ -2,7 +2,7 @@
 layout: publications
 permalink: /publications/pnec/
 date: 2022_05_26 # determines sorting just take the date of the first publication as YYYY_MM_DD
-image: assets/teaser.svg
+image: /assets/teaser.svg
 image_mouseover: assets/trajectory_8.svg
 icon: assets/favicon.ico
 
