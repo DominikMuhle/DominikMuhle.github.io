@@ -37,12 +37,20 @@
     {% include header.html %}
   </center>
   <!-- Content -->
-  {{ page.content }}
-
+  <div class="publication-details">
+    {{ page.content }}
+  </div>
+  {% if page.abstract %}
+  <div class="publication-abstract">
+    <h3>Abstract</h3>
+    <p>{{ page.abstract }}</p>
+  </div>
+  {% endif %}
   {% include citation.html %}
   <!-- Acknowledgements -->
-
+  {% if page.acknowledgements %}
   {% include acknowledgements.html %}
+  {% endif %}
 </body>
 
 </html>

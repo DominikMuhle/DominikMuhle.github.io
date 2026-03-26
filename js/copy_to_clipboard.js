@@ -34,3 +34,9 @@ function CopyToClipboard(copyText) {
   // Alert the copied text
   tempAlert('Copied Citation:<br>' + formateCitationHTML(copyText), 2000);
 }
+
+function CopyBibtex() {
+  var bibtex = document.getElementById("bibtex_block").innerText;
+  navigator.clipboard.writeText(bibtex);
+  tempAlert('Copied BibTeX', 2000);
+}

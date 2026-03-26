@@ -3,11 +3,15 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- citation -->
-      <h2>Citation <a onclick="CopyToClipboard('{{page.citation}}')" class="btn btn--primary"><i class="fa fa-copy"></i></a></h2>
-      <pre class="hero teaser is-light">
-<code id="citation_block">
-</code>
-      </pre>
+      <h2>
+        Citation 
+        <a onclick="CopyToClipboard('{{page.citation}}')" class="btn btn--primary" style="margin-left: 10px;"><i class="fa fa-copy"></i></a>
+        <a onclick="CopyBibtex()" class="btn btn--secondary" style="margin-left: 5px;"><i class="fa fa-code"></i> BibTeX</a>
+      </h2>
+      <div class="citation-content">
+        <pre class="citation-text"><code id="citation_block"></code></pre>
+        <pre class="citation-bibtex"><code id="bibtex_block">{{page.citation}}</code></pre>
+      </div>
       <script src="{{ site.baseurl }}{% link js/copy_to_clipboard.js %}"></script>
       <script>
         document.getElementById("citation_block").innerHTML = formateCitationHTML("{{page.citation}}");
