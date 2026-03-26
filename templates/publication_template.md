@@ -10,7 +10,7 @@ image_mouseover: /assets/teaser_hover.png # path to image shown on hover (option
 title: "Publication Title in Quotes"
 venue: Conference/Journal Name, Year
 authors:
-  - name: author_id # must match an id in _data/authors_internal.yaml or _data/authors_external.yaml
+  - name: author_id # must match an id in _data/authors.yaml
     affiliations: "1,2" # comma-separated affiliation numbers (1-indexed)
     # equal_contribution: True # Optional: uncomment for equal contribution (use True, not "true")
   # Add more authors as needed

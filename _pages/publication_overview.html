@@ -49,12 +49,8 @@ author_profile: false
                     </div>
                     <div class="publication-authors">
                         {% for author_id in publication.authors %}
-                        {% if site.data.authors_external[author_id.name] != nil %}
-                        {% assign author = site.data.authors_external[author_id.name] %}
-                        {% endif %}
-                        {% if site.data.authors_internal[author_id.name] != nil %}
-                        {% assign author = site.data.authors_internal[author_id.name] %}
-                        {% endif %}
+                        {% assign author = site.data.authors[author_id.name] %}
+                        {% if author != nil %}
                         <span class="author-block {% if author.is_me %}author-me{% endif %}">
                         {% if author.is_me %}
                             {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if author_id.equal_contribution != nil %}<sup>*</sup>{% endif %}<!-- {% if forloop.last == false %},{%
@@ -63,6 +59,7 @@ author_profile: false
                             <a href="{{author.website}}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name}}</a>{% if author_id.equal_contribution != nil %}<sup>*</sup>{% endif %}<!-- {% if forloop.last == false %},{% endif %} -->
                         {% endif %}
                         </span>
+                        {% endif %}
                         {% endfor %}
                     </div>
                     <p class="publication-description">{{ publication.description }}</p>
