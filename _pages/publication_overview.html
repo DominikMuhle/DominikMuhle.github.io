@@ -66,14 +66,15 @@ author_profile: false
                     {% if publication.links != nil %}
                     <div class="publication-links">
                         {% for link in publication.links %}
-                        <a class="publication-link" href="{{ link.link }}">{{link.name}}</a>
-                        {% if forloop.last == false or publication.citation != nil %}|{% endif %}
+                        <a class="publication-link {% if link.name == 'Paper' %}paper{% elsif link.name == 'Project Page' %}project{% elsif link.name == 'Code' %}code{% elsif link.name == 'Citation' %}citation{% elsif link.name == 'Video' %}video{% else %}other{% endif %}" href="{{ link.link }}">
+  {% if link.style %}<i class="{{ link.style }}"></i>{% endif %}
+  {{ link.name }}
+</a>
                         {% endfor %}
                         {% if publication.citation != nil %}
-                        <a class="publication-link" onclick="CopyToClipboard('{{publication.citation}}')">
-                        Citation 
-                        <i class="fa fa-copy
-                        "></i>
+                        <div class="citation-section">
+<a onclick="CopyToClipboard('{{publication.citation}}')" class="btn btn--primary"><i class="fa fa-copy"></i> Copy Citation</a>
+</div>
                         </a>
                         {% endif %}
                     </div>

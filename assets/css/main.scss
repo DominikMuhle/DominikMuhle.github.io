@@ -119,11 +119,21 @@ body {
     }
 }
 
+.container {
+  display: grid;
+  max-width: 1200px; // Constrain total width of the container
+  margin: 0 auto; // Center the container
+  padding: 16px; // Add some padding to prevent overlap
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); // Set minimum column size to 400px
+  gap: 16px; // Controls spacing between grid items
+}
+
 // Publication overview styles
 .publication-card {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #FFF;
-    min-width: 700px;
+    width: 600px; // Set a fixed width for cards
+    height: 100%; // Ensure cards maintain consistent height
     padding: 32px 24px; // Add more vertical padding
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -132,13 +142,24 @@ body {
 
     display: flex;
     flex-direction: column;
-    width: 450px;
+    justify-content: flex-start; // Align to top initially
+    height: 100%; /* Ensure card fills available space */
+
+    .publication-data {
+        margin-top: auto; /* Anchor content to the bottom */
+    }
+    align-items: stretch; // Ensure consistent alignment within the card
+    max-width: 100%; // Allow cards to adapt to their grid column size
+    box-sizing: border-box; // Account for padding/margin in width
     margin: 0 auto 16px auto; // Reset bottom margin to 16px
         .publication-media {
           height: 300px; // Set explicit height for the media container
           margin-bottom: 16px; // Add spacing below media
           margin: 0 auto;      // Center media horizontally
-          max-width: 100%;    // Ensure it spans the card width 
+           width: 100%; // Make the media width flexible
+           height: auto; // Scale dynamically based on content
+           min-height: 300px; // Ensure a minimum height to prevent disappearance
+           max-width: 100%;
         min-width: 200px;
         max-width: 300px;
         width: 100%;
@@ -220,6 +241,8 @@ body {
     }
 
     .publication-data {
+    position: relative; // Enable absolute positioning for .publication-links
+
     .publication-description {
         max-height: 120px; // Set max height for descriptions
         overflow-y: auto; // Enable vertical scrolling for overflow
@@ -294,22 +317,48 @@ body {
             }
         }
     
-        .publication-description {
+.publication-description {
+    overflow: hidden; // Prevent text from spilling out
+    text-overflow: ellipsis; // Add ellipsis for long text
+    word-wrap: break-word; // Ensure words break properly
             color: #000;
             font-size: 14pt;
             margin: 0.5em 0;
         }
     
         .publication-links {
-            margin: 0 !important;
-            margin-top: 0.5em !important;
-            margin-bottom: 0.5em !important;
-            .publication-link {
-                font-size: 14pt;
-                margin: 0 !important;
-                margin-top: 0.5em !important;
-            }
+    position: absolute; // Anchor to the bottom of .publication-data
+    bottom: 0;
+    width: 100%; // Ensure it spans the full width
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; // Spacing between buttons
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 16px;
+        border-radius: 8px;
+        color: #fff; // White text for contrast
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        transition: background-color 0.2s ease;
+
+
+
+        &.paper { background-color: #007bff; } // Blue for Paper
+        &.project { background-color: #28a745; } // Green for Project Page
+        &.code { background-color: #ffa500; } // Orange for Code
+        &.citation { background-color: #dc3545; } // Red for Citation
+        &.video { background-color: #17a2b8; } // Teal for Video
+        &.other { background-color: #6c757d; } // Grey for non-recognized links
+
+        &:hover {
+            filter: brightness(0.9); // Darken on hover
         }
+    }
+} /* Removed conflicting extra margin declarations */
     }
 }
 
