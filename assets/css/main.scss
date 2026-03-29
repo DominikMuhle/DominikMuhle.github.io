@@ -336,6 +336,9 @@ body {
     &.video    { background-color: #e62222; }
     &.other    { background-color: #7f8c8d; }
 
+    &:visited {
+        color: #FFF;
+    }
     &:hover {
         filter: brightness(0.85);
         transform: translateY(-1px);

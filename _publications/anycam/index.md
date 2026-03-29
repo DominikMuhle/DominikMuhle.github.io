@@ -34,4 +34,17 @@ description: "AnyCam is a fast transformer model that directly estimates camera 
 links:
     - name: Project Page
       link: https://fwmb.github.io/anycam/
+    - name: Paper
+      link: https://arxiv.org/abs/2503.23282
+    - name: Code
+      link: https://github.com/Brummi/anycam
+    - name: Video
+      link: https://youtu.be/5-mzV-aLbck
+
+citation: '@inproceedings{wimbauer2025anycam,
+  title={AnyCam: Learning to Recover Camera Poses and Intrinsics from Casual Videos},
+  author={Wimbauer, Felix and Chen, Weirong and Muhle, Dominik and Rupprecht, Christian and Cremers, Daniel},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2025}
+}'
 ---

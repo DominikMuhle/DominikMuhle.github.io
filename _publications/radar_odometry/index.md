@@ -48,8 +48,6 @@ description: "We propose a simple, yet effective, heuristic-based method to extr
 
 
 links:
-    # - name: Project Page
-    #   link: publications/radar_odometry/
     - name: Paper
       link: https://www.ipb.uni-bonn.de/wp-content/papercite-data/pdf/casado-herraez2025icra.pdf
       style: "bi bi-file-earmark-richtext"
