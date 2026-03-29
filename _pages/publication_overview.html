@@ -63,7 +63,12 @@ author_profile: false
                         {% endif %}
                         {% endfor %}
                     </div>
-                    <p class="publication-description">{{ publication.description }}</p>
+                    <details class="publication-description-wrapper">
+                        <summary class="description-toggle">
+                            <i class="bi bi-chevron-right description-toggle-icon"></i>
+                        </summary>
+                        <p class="publication-description">{{ publication.description }}</p>
+                    </details>
                     {% if publication.links != nil %}
                     <div class="publication-links">
 {% for link in publication.links %}

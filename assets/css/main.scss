@@ -265,11 +265,38 @@ body {
             }
         }
     
-        .publication-description {
-            color: #000;
-            font-size: 14pt;
+        .publication-description-wrapper {
             margin: 0.5em 0 0 0;
-            word-wrap: break-word;
+
+            .description-toggle {
+                cursor: pointer;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 0.4rem;
+                font-size: 12pt;
+                font-weight: 500;
+                color: #555;
+                user-select: none;
+
+                &::-webkit-details-marker { display: none; }
+
+                .description-toggle-icon {
+                    transition: transform 0.2s ease;
+                    font-size: 0.85em;
+                }
+            }
+
+            &[open] .description-toggle-icon {
+                transform: rotate(90deg);
+            }
+
+            .publication-description {
+                color: #000;
+                font-size: 14pt;
+                margin: 0.4em 0 0 0;
+                word-wrap: break-word;
+            }
         }
     
         .publication-links {
