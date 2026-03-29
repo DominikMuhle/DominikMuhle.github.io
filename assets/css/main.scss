@@ -132,26 +132,15 @@ body {
 .publication-card {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #FFF;
-    width: 600px; // Set a fixed width for cards
-    height: 100%; // Ensure cards maintain consistent height
-    padding: 32px 24px; // Add more vertical padding
+    width: 600px;
+    padding: 32px 24px;
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    margin: 0; // Reset shorthand margin
-    margin-bottom: 48px; // Explicit vertical spacing
-
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; // Align to top initially
-    height: 100%; /* Ensure card fills available space */
-
-    .publication-data {
-        margin-top: auto; /* Anchor content to the bottom */
-    }
-    align-items: stretch; // Ensure consistent alignment within the card
-    max-width: 100%; // Allow cards to adapt to their grid column size
-    box-sizing: border-box; // Account for padding/margin in width
-    margin: 0 auto 16px auto; // Reset bottom margin to 16px
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto 16px auto;
         .publication-media {
           height: 300px; // Set explicit height for the media container
           margin-bottom: 16px; // Add spacing below media
@@ -241,14 +230,6 @@ body {
     }
 
     .publication-data {
-    position: relative; // Enable absolute positioning for .publication-links
-
-    .publication-description {
-        max-height: 120px; // Set max height for descriptions
-        overflow-y: auto; // Enable vertical scrolling for overflow
-    }
-        flex: 1;
-        min-width: 500px;
         color: #000;
         padding-top: 16px;
         padding-bottom: 16px;
@@ -317,22 +298,18 @@ body {
             }
         }
     
-.publication-description {
-    overflow: hidden; // Prevent text from spilling out
-    text-overflow: ellipsis; // Add ellipsis for long text
-    word-wrap: break-word; // Ensure words break properly
+        .publication-description {
             color: #000;
             font-size: 14pt;
             margin: 0.5em 0;
+            word-wrap: break-word;
         }
     
         .publication-links {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin-top: 0.75rem;
 
     a, button {
         display: inline-flex;
@@ -351,11 +328,11 @@ body {
         transition: filter 0.15s ease, transform 0.15s ease;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 
-        &.paper    { background-color: #c0392b; }
+        &.paper    { background-color: #48793d; }
         &.project  { background-color: #2980b9; }
-        &.code     { background-color: #27ae60; }
-        &.citation { background-color: #8e44ad; }
-        &.video    { background-color: #e67e22; }
+        &.code     { background-color: #000000; }
+        &.citation { background-color: #5d5d5d; }
+        &.video    { background-color: #e62222; }
         &.other    { background-color: #7f8c8d; }
 
         &:hover {
