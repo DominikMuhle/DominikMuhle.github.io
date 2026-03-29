@@ -40,22 +40,11 @@
             {% endunless %}
             {% endfor %}
           </div>
-          <div class="column has-text-centered">
+          <div class="publication-links" style="justify-content: center; margin-top: 1rem;">
             {% for link in page.links %}
-            {% if link.name != "Project Page" %}
-            <span class="link-block">
-              <a href="{{ link.link }}" target="_blank" class="external_link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  {% if link.style != nil %}
-                  <i class="{{link.style}}"></i>
-                  {% else %}
-                  <i class="fas fa-external-link-alt"></i>
-                  {% endif %}
-                </span>
-                <span class="publication-link">{{link.name}}</span>
-              </a>
-            </span>
-            {% endif %}
+              {% if link.name != "Project Page" %}
+                {% include publication_links.html link=link %}
+              {% endif %}
             {% endfor %}
           </div>
         </div>
