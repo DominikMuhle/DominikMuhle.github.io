@@ -1,0 +1,31 @@
+{% assign btn_class = "publication-link" %}
+{% case link.name %}
+  {% when "Paper" %}
+    {% assign btn_class = btn_class | append: " paper" %}
+    {% assign default_icon = "bi bi-file-earmark-text" %}
+  {% when "Project Page" %}
+    {% assign btn_class = btn_class | append: " project" %}
+    {% assign default_icon = "bi bi-globe" %}
+  {% when "Video" %}
+    {% assign btn_class = btn_class | append: " video" %}
+    {% assign default_icon = "bi bi-play-circle" %}
+  {% when "Code" %}
+    {% assign btn_class = btn_class | append: " code" %}
+    {% assign default_icon = "bi bi-github" %}
+  {% when "Citation" %}
+    {% assign btn_class = btn_class | append: " citation" %}
+    {% assign default_icon = "bi bi-clipboard" %}
+  {% else %}
+    {% assign btn_class = btn_class | append: " other" %}
+    {% assign default_icon = "bi bi-link-45deg" %}
+{% endcase %}
+
+{% if link.style %}
+  {% assign icon_class = link.style %}
+{% else %}
+  {% assign icon_class = default_icon %}
+{% endif %}
+
+<a class="{{ btn_class }}" href="{{ link.link }}" title="{{ link.name }}">
+  <i class="{{ icon_class }}"></i> {{ link.name }}
+</a>

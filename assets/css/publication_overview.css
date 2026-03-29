@@ -122,4 +122,96 @@
   margin-top: 0.5em !important;
 }
 
-/*# sourceMappingURL=publication_overview.css.map */
+/* Unifying .publication-links */
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.publication-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: inherit;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.publication-link:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Colors based on link type */
+.publication-link.paper {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.publication-link.paper:hover {
+  background-color: #c0392b;
+}
+
+.publication-link.project {
+  background-color: #3498db;
+  color: white;
+}
+
+.publication-link.project:hover {
+  background-color: #2980b9;
+}
+
+.publication-link.video {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.publication-link.video:hover {
+  background-color: #27ae60;
+}
+
+.publication-link.code {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.publication-link.code:hover {
+  background-color: #16a085;
+}
+
+.publication-link.citation {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.publication-link.citation:hover {
+  background-color: #8e44ad;
+}
+
+.publication-link.other {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.publication-link.other:hover {
+  background-color: #7f8c8d;
+}
+
+/* Citation button feedback */
+.publication-link.citation.copied {
+  background-color: #7169ee;
+}
+
+.icon {
+  font-size: 1rem;
+}
+

@@ -10,6 +10,7 @@ author_profile: false
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <script src="/js/copy_to_clipboard.js"></script>
 </head>
@@ -65,17 +66,13 @@ author_profile: false
                     <p class="publication-description">{{ publication.description }}</p>
                     {% if publication.links != nil %}
                     <div class="publication-links">
-                        {% for link in publication.links %}
-                        <a class="publication-link {% if link.name == 'Paper' %}paper{% elsif link.name == 'Project Page' %}project{% elsif link.name == 'Code' %}code{% elsif link.name == 'Citation' %}citation{% elsif link.name == 'Video' %}video{% else %}other{% endif %}" href="{{ link.link }}">
-  {% if link.style %}<i class="{{ link.style }}"></i>{% endif %}
-  {{ link.name }}
-</a>
-                        {% endfor %}
+{% for link in publication.links %}
+  {% include publication_links.html link=link %}
+{% endfor %}
                         {% if publication.citation != nil %}
-                        <div class="citation-section">
-<a onclick="CopyToClipboard('{{publication.citation}}')" class="btn btn--primary"><i class="fa fa-copy"></i> Copy Citation</a>
-</div>
-                        </a>
+<button class="publication-link citation" onclick="CopyToClipboard('{{publication.citation}}')">
+  <i class="bi bi-clipboard"></i> Copy Citation
+</button>
                         {% endif %}
                     </div>
                     {% endif %}
