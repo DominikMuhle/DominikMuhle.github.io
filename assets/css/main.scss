@@ -143,92 +143,55 @@ body {
     box-sizing: border-box;
     margin: 0 auto 16px auto;
         .publication-media {
-          height: 300px; // Set explicit height for the media container
-          margin-bottom: 16px; // Add spacing below media
-          margin: 0 auto;      // Center media horizontally
-           width: 100%; // Make the media width flexible
-           height: auto; // Scale dynamically based on content
-           min-height: 300px; // Ensure a minimum height to prevent disappearance
-           max-width: 100%;
-        min-width: 200px;
-        max-width: 300px;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-
-.base-media {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  pointer-events: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.base-media img,
-.base-media video {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-}
-
-.overlay-media {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  pointer-events: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay-media img,
-.overlay-media video {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-}
-
-        .overlay-media {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            opacity: 0%;
-            transition: opacity 0.5s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            img,
-            video {
-                max-width: 100%;
-                max-height: 100%;
-                object-fit: contain;
-                display: block;
-            }
-        }
-
-        &:hover {
-            .overlay-media {
-                opacity: 100%;
-            }
+            width: 100%;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
 
             .base-media {
-                opacity: 0%;
+                position: absolute;
+                inset: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 1;
+                transition: opacity 0.5s ease;
+
+                img, video {
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+
+            .overlay-media {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+
+                img, video {
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+
+            &:hover {
+                .overlay-media { opacity: 1; }
+                .base-media    { opacity: 0; }
             }
         }
-    }
 
     .publication-data {
         display: flex;
