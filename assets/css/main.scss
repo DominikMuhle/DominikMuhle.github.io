@@ -329,11 +329,11 @@ body {
     transition: filter 0.15s ease, transform 0.15s ease;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 
-    &.paper    { background-color: #48793d; }
-    &.project  { background-color: #2980b9; }
+    &.paper    { background-color: #b31b1b; }
+    &.project  { background-color: #292826; }
     &.code     { background-color: #000000; }
     &.citation { background-color: #5d5d5d; }
-    &.video    { background-color: #e62222; }
+    &.video    { background-color: #fe0132; }
     &.other    { background-color: #7f8c8d; }
 
     &:visited {
