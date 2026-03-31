@@ -1,10 +1,10 @@
 ---
 layout: publications
 permalink: /publications/ipformer/
-# external_link: https://github.com/markus-42/IPFormer
+external_link: https://markus-42.github.io/publications/2025/ipformer/
 date: 2025_12_01 # determines sorting just take the date of the first publication as YYYY_MM_DD
-image: /assets/architecture_reb.png
-image_mouseover: /assets/ipformer_intro.gif
+image: assets/architecture_reb.png
+image_mouseover: assets/ipformer_intro.gif
 
 title: "IPFormer: Visual 3D Panoptic Scene Completion with Context-Adaptive Instance Proposals"
 venue: NeurIPS, 2025

@@ -3,8 +3,8 @@ layout: publications
 permalink: /publications/s4c/
 external_link: https://ahayler.github.io/publications/s4c/
 date: 2023_05_30 # determines sorting just take the date of the first publication as YYYY_MM_DD
-image: /assets/teaser.png
-image_mouseover: assets/header_video.mp4
+image: assets/teaser.png
+image_mouseover: assets/teaser_video.webm
 
 title: "S4C: Self-Supervised Semantic Scene Completion with Neural Fields"
 venue: "3DV Spotlight, 2024"

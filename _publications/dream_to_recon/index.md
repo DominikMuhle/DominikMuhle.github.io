@@ -1,10 +1,10 @@
 ---
 layout: publications
 permalink: /publications/dream_to_recon/
-# external_link: https://github.com/philippwulff/dream-to-recon/
+external_link: https://github.com/philippwulff/dream-to-recon/
 date: 2025_10_19 # determines sorting just take the date of the first publication as YYYY_MM_DD
 image: /assets/method_v2.svg
-image_mouseover: /assets/method_vid_a.mp4
+image_mouseover: /assets/method_vid_a.webm
 
 title: "Dream-to-Recon: Monocular 3D Reconstruction with Diffusion-Depth Distillation from Single Images"
 venue: ICCV, 2025

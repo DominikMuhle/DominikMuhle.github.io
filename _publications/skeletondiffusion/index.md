@@ -1,7 +1,7 @@
 ---
 layout: publications
 permalink: /publications/skeletondiffusion/
-# external_link: https://ceveloper.github.io/publications/skeletondiffusion/
+external_link: https://ceveloper.github.io/publications/skeletondiffusion/
 date: 2025_03_01 # determines sorting just take the date of the first publication as YYYY_MM_DD
 image: /assets/teaser.webm
 image_mouseover: assets/teaser_image.png
@@ -40,6 +40,9 @@ links:
     - name: Code
       link: https://github.com/Ceveloper/SkeletonDiffusion/tree/main
       style: "bi bi-github"
+    - name: Video
+      link: https://www.youtube.com/watch?v=W9GzdDXN41M
+      style: "bi bi-youtube"
 
 citation: '@article{curreli2025nonisotropic,
   title={Nonisotropic Gaussian Diffusion for Realistic 3D Human Motion Prediction},

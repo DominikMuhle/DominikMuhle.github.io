@@ -1,7 +1,7 @@
 ---
 layout: publications
 permalink: /publications/anycam/
-# external_link: https://fwmb.github.io/anycam/
+external_link: https://fwmb.github.io/anycam/
 date: 2025_03_02 # determines sorting just take the date of the first publication as YYYY_MM_DD
 image: /assets/teaser.svg
 image_mouseover: /assets/architecture.svg

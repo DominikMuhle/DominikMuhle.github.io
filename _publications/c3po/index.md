@@ -3,8 +3,8 @@ layout: publications
 permalink: /publications/c3po/
 # external_link: https://3dvconf.github.io/2026/accepted-papers/
 date: 2026_03_01 # determines sorting just take the date of the first publication as YYYY_MM_DD
-image: /assets/media.svg
-image_mouseover: /assets/mouseover.pdf
+image: assets/media.svg
+image_mouseover: assets/mouseover.svg
 
 title: "C3PO: Canonicalization of 3D Pose from Partial Views with Generalizable Correspondence Features"
 venue: 3DV, 2026

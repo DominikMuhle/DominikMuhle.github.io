@@ -21,11 +21,7 @@ author_profile: false
             {% assign sorted = site.publications | reverse %}
             {% for publication in sorted %}
             <div class="publication-card">
-                {% if publication.external_link != nil %}
-                    {% assign base_link = publication.external_link %}
-                {% else %}
-                    {% assign base_link = publication.permalink %}
-                {% endif %}
+                {% assign base_link = publication.permalink %}
                 {% if publication.image_mouseover == nil %}
                     {% assign image_mouseover = publication.image %}
                 {% else %}

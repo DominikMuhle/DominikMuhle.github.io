@@ -3,8 +3,8 @@ layout: publications
 permalink: /publications/kdbts/
 external_link: https://keonhee-han.github.io/publications/kdbts/
 date: 2024_04_11 # determines sorting just take the date of the first publication as YYYY_MM_DD
-image: /assets/overview.png
-image_mouseover: assets/knowledge_distillation.png
+image: assets/overview.png
+image_mouseover: assets/pipeline.png
 
 title: "Boosting Self-Supervision for Single View Scene Completion via Knowledge Distillation"
 venue: CVPR, 2024
@@ -39,7 +39,6 @@ links:
     - name: Code
       link: https://github.com/keonhee-han/KDBTS
       style: "bi bi-github"
-
 
 citation: '@inproceedings{han2024kdbts,
  title = {Boosting Self-Supervision for Single-View Scene Completion

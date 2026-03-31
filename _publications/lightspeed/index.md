@@ -3,8 +3,8 @@ layout: publications
 permalink: /publications/lightspeed/
 external_link: https://reginehartwig.github.io/publications/geco/
 date: 2025_10_19 # determines sorting just take the date of the first publication as YYYY_MM_DD
-image: /assets/teaser.png
-image_mouseover: /assets/pline3.png
+image: assets/teaser.png
+image_mouseover: assets/pline3.png
 
 title: "GECO: Geometrically Consistent Embedding with Lightspeed Inference"
 venue: ICCV, 2025
@@ -37,6 +37,9 @@ links:
     - name: Code
       link: https://github.com/reginehartwig/geco
       style: "bi bi-github"
+    - name: Video
+      link: https://youtu.be/y-RMEnvjqbo
+      style: "bi bi-youtube"
 
 citation: '@inproceedings{hartwig2025geco,
   title={GECO: Geometrically Consistent Embedding with Lightspeed Inference},
