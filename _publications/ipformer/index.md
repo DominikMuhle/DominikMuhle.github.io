@@ -37,6 +37,8 @@ description: "IPFormer is the first method that leverages context-adaptive insta
 
 
 links:
+    - name: Project Page
+      link: https://markus-42.github.io/publications/2025/ipformer/
     - name: Paper
       link: https://arxiv.org/abs/2506.20671
       style: "bi bi-file-earmark-richtext"
