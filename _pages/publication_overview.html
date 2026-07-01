@@ -53,7 +53,12 @@ author_profile: false
                             {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if author_id.equal_contribution != nil %}<sup>*</sup>{% endif %}<!-- {% if forloop.last == false %},{%
                         endif %} -->
                         {% else %}
-                            <a href="{{author.website}}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name}}</a>{% if author_id.equal_contribution != nil %}<sup>*</sup>{% endif %}<!-- {% if forloop.last == false %},{% endif %} -->
+                            <!-- check if author has a website -->
+                            {% if author.website == nil %}
+                                <span>{{ author.first_name }} {{ author.middle_name }} {{ author.last_name }}</span>
+                            {% else %}
+                                <a href="{{author.website}}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name}}</a>{% if author_id.equal_contribution != nil %}<sup>*</sup>{% endif %}<!-- {% if forloop.last == false %},{% endif %} -->
+                            {% endif %}
                         {% endif %}
                         </span>
                         {% endif %}

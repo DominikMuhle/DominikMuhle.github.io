@@ -171,3 +171,22 @@ henrimees:
   last_name: Meeß
   website: https://scholar.google.com/citations?user=7Qdm9jUAAAAJ&hl=de
   is_me: false
+christophotten:
+  first_name: Christoph
+  last_name: Otten gennant Hermes
+  is_me: false
+mateodemayo:
+  first_name: Mateo
+  last_name: de Mayo
+  website: https://cvg.cit.tum.de/members/mayom
+  is_me: false
+nourihilscher:
+  first_name: Nouri Alexander
+  last_name: Hilscher
+  website: https://github.com/nourihilscher
+  is_me: false
+florianhofherr:
+  first_name: Florian
+  last_name: Hofherr
+  website: https://florianhofherr.github.io
+  is_me: false
