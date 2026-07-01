@@ -6,23 +6,288 @@ author_profile: false
 ---
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/bulma.min.css">
-    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="/assets/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="/assets/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="/assets://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="/assets/css/slider-component.css">
-    <!-- <link rel="stylesheet" href="/assets/css/index.css"> -->
 </head>
 
-<section class="section">
-    <p class="content has-text-centered">
-        <a href="/assets/cv_short.pdf" target="_blank">Download my CV</a>
-    </p>
-    <div class="hero-body">
-        <img src="/assets/cv_short.pdf" width="100%" />
-      </div>
-</section>
 
-<!-- <embed src="/assets/cv_short.pdf" width="100%" height="1000px" type='application/pdf'> -->
+<div class="cv">
+
+    <header class="cv-header">
+        <div>
+            <h1 class="cv-name">Dominik Muhle</h1>
+            <div class="cv-subtitle">Ph.D. Candidate &mdash; 3D Scene Reconstruction, TU Munich</div>
+        </div>
+        <div class="cv-contact">
+            <span><i class="bi bi-geo-alt-fill"></i>Munich, Germany</span>
+            <span><i class="bi bi-envelope-fill"></i><a href="mailto:dominikmuhle@icloud.com">dominikmuhle@icloud.com</a></span>
+        </div>
+    </header>
+
+    <!-- Academics -->
+    <details class="cv-section">
+        <summary>Academics</summary>
+
+        <div class="cv-entry">
+            <div class="cv-date">Since 04/2022</div>
+            <div class="cv-body">
+                <p class="cv-role">Ph.D. <span class="cv-org">&middot; Technical University of Munich (TUM)</span></p>
+                <p class="cv-meta">Munich, Germany</p>
+                <p>Ph.D. in 3D Scene Reconstruction at the Chair of Computer Vision &amp; Artificial
+                    Intelligence in the Computer Vision Group under the supervision of Prof. Dr. Daniel Cremers.</p>
+            </div>
+        </div>
+
+        <div class="cv-entry">
+            <div class="cv-date">10/2018 &ndash; 10/2021</div>
+            <div class="cv-body">
+                <p class="cv-role">M.Sc. Robotics, Cognition, Intelligence <span class="cv-org">&middot; TUM</span></p>
+                <p class="cv-meta">Munich, Germany &middot; Final Grade: 1.4</p>
+                <ul>
+                    <li>Master's Thesis: &ldquo;Frame-To-Frame Rotation Estimation under Uncertain Feature
+                        Positions for Visual Odometry&rdquo; (Grade: 1.0)</li>
+                    <li>WS 19/20: Tutor for the course &ldquo;Machine Learning&rdquo;</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-entry">
+            <div class="cv-date">10/2015 &ndash; 09/2018</div>
+            <div class="cv-body">
+                <p class="cv-role">B.Sc. Electrical Engineering <span class="cv-org">&middot; Karlsruhe Institute of Technology (KIT)</span></p>
+                <p class="cv-meta">Karlsruhe, Germany &middot; Final Grade: 1.3</p>
+                <p>Bachelor's Thesis: &ldquo;Sensorlose Regelung einer permanenterregten Synchronmaschine&rdquo;.</p>
+            </div>
+        </div>
+
+        <div class="cv-entry">
+            <div class="cv-date">2007 &ndash; 2015</div>
+            <div class="cv-body">
+                <p class="cv-role">High School <span class="cv-org">&middot; Gymnasium Unterrieden</span></p>
+                <p class="cv-meta">Sindelfingen, Germany &middot; Final Grade: 1.3</p>
+                <p>Honors: DPG-Abiturpreis, DMV-Abiturpreis, Ferry Porsche Preis.</p>
+            </div>
+        </div>
+    </details>
+
+    <!-- Professional Experience -->
+    <details class="cv-section">
+        <summary>Professional Experience</summary>
+
+        <div class="cv-entry">
+            <div class="cv-date">10/2019 &ndash; 03/2021</div>
+            <div class="cv-body">
+                <p class="cv-role">Founding Member <span class="cv-org">&middot; WARP</span></p>
+                <p class="cv-meta">Munich, Germany &middot; Start-up for autonomous driving for sub-car vehicles</p>
+                <ul>
+                    <li>Supervision of student interns in the area of LiDAR Odometry and Mapping (LOAM)</li>
+                    <li>Research and implementation of a custom SOTA feature-based Visual Odometry algorithm</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-entry">
+            <div class="cv-date">05/2019 &ndash; 09/2019</div>
+            <div class="cv-body">
+                <p class="cv-role">Student Team <span class="cv-org">&middot; ROBOY</span></p>
+                <p class="cv-meta">Munich, Germany &middot; Humanoid Robotics Research Project</p>
+                <ul>
+                    <li>Implementation of a navigation stack for LiDAR Simultaneous Localization and Mapping</li>
+                    <li>Implementation of longitudinal and lateral vehicle control using MYO-muscles</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-entry">
+            <div class="cv-date">10/2016 &ndash; 01/2019</div>
+            <div class="cv-body">
+                <p class="cv-role">Co-founder <span class="cv-org">&middot; FlowerAI</span></p>
+                <p class="cv-meta">Munich, Germany &middot; Start-up for an intelligent gardening assistant</p>
+                <ul>
+                    <li>Financed and supported by UnternehmerTUM; participated in the Google Cloud Start-up Program with $20,000 in cloud credits</li>
+                    <li>Development of autonomous irrigation hardware</li>
+                    <li>Patent application for the automatic fertilizer dispenser</li>
+                    <li>Moisture prediction using machine learning</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-entry">
+            <div class="cv-date">03/2018 &ndash; 09/2018</div>
+            <div class="cv-body">
+                <p class="cv-role">Intern <span class="cv-org">&middot; Bosch</span></p>
+                <p class="cv-meta">Schwieberdingen, Germany &middot; Department: Power Train Solutions</p>
+                <ul>
+                    <li>Design of a control system that switches between low-speed and high-speed control</li>
+                    <li>Implementation of the control system in MATLAB Simulink with a provided motor model</li>
+                    <li>Validation of the control system with a real motor</li>
+                </ul>
+            </div>
+        </div>
+    </details>
+
+    <!-- Skills & Languages -->
+    <details class="cv-section">
+        <summary>Skills &amp; Languages</summary>
+
+        <h3 class="cv-subhead">Languages</h3>
+        <div class="cv-grid cv-languages">
+            <div class="cv-grid-row"><span>German</span><span class="cv-grid-val">Native</span></div>
+            <div class="cv-grid-row"><span>English</span><span class="cv-grid-val">C1 &middot; Cambridge CAE</span></div>
+            <div class="cv-grid-row"><span>French</span><span class="cv-grid-val">B1</span></div>
+        </div>
+
+        <h3 class="cv-subhead">Technical Skills</h3>
+        <div class="cv-skills">
+            <span class="cv-skill"><span class="dot"></span>Python</span>
+            <span class="cv-skill"><span class="dot"></span>PyTorch</span>
+            <span class="cv-skill"><span class="dot"></span>Numpy</span>
+            <span class="cv-skill"><span class="dot"></span>C++</span>
+            <span class="cv-skill"><span class="dot"></span>ROS/ROS2</span>
+            <span class="cv-skill"><span class="dot"></span>LaTeX</span>
+            <span class="cv-skill good"><span class="dot"></span>MATLAB</span>
+            <span class="cv-skill good"><span class="dot"></span>Simulink</span>
+            <span class="cv-skill"><span class="dot"></span>Linux</span>
+            <span class="cv-skill"><span class="dot"></span>macOS</span>
+            <span class="cv-skill good"><span class="dot"></span>Windows</span>
+        </div>
+        <p class="cv-skill-legend">
+            <span><span class="dot"></span>very good</span>
+            <span><span class="dot good"></span>good</span>
+        </p>
+    </details>
+
+    <!-- Publications -->
+    <details class="cv-section">
+        <summary>Publications</summary>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">EquiFusion: Kinematics-Agnostic Human Motion Prediction via Equivariant Latent Diffusions</div>
+            <div class="cv-pub-authors">C. Curreli, F. Hofherr, <b>D. Muhle</b>, A. Saroha, R. Marin, D. Cremers &middot; <span class="cv-pub-venue">ECCV 2026</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">VOCA: Visual Odometry with Codec Awareness</div>
+            <div class="cv-pub-authors">N. A. Hilscher, M. de Mayo, <b>D. Muhle</b>, C. Otten gennant Hermes, D. Cremers &middot; <span class="cv-pub-venue">ECCV 2026</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">C3PO: Canonicalization of 3D Pose from Partial Views with Generalizable Correspondence Features</div>
+            <div class="cv-pub-authors">Y. Chi, L. Sommer, O. Dünkel, <b>D. Muhle</b>, D. Cremers, C. Theobalt, A. Kortylewski &middot; <span class="cv-pub-venue">3DV 2026</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">IPFormer: Visual 3D Panoptic Scene Completion with Context-Adaptive Instance Proposals</div>
+            <div class="cv-pub-authors">M. Gross, A. Fahmy, D. Niwattananan, <b>D. Muhle</b>, R. Song, R. Marin, D. Cremers, H. Meeß &middot; <span class="cv-pub-venue">NeurIPS 2025</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">Dream-to-Recon: Monocular 3D Reconstruction with Diffusion-Depth Distillation from Single Images</div>
+            <div class="cv-pub-authors">P. Wulff, F. Wimbauer, <b>D. Muhle</b>, D. Cremers &middot; <span class="cv-pub-venue">ICCV 2025</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">GECO: Geometrically Consistent Embedding with Lightspeed Inference</div>
+            <div class="cv-pub-authors">R. Hartwig, <b>D. Muhle</b>, R. Marin, D. Cremers &middot; <span class="cv-pub-venue">ICCV 2025</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">AnyCam: Learning to Recover Camera Poses and Intrinsics from Casual Videos</div>
+            <div class="cv-pub-authors">F. Wimbauer, W. Chen, <b>D. Muhle</b>, C. Rupprecht, D. Cremers &middot; <span class="cv-pub-venue">CVPR 2025</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">Nonisotropic Gaussian Diffusion for Realistic 3D Human Motion Prediction</div>
+            <div class="cv-pub-authors">C. Curreli, <b>D. Muhle</b>, A. Saroha, Z. Ye, R. Marin, D. Cremers &middot; <span class="cv-pub-venue">CVPR 2025</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">Ground-Aware Automotive Radar Odometry</div>
+            <div class="cv-pub-authors">D. Casado Herraez, F. Kaschner, M. Zeller, <b>D. Muhle</b>, J. Behley, M. Heidingsfeld, D. Cremers, C. Stachniss &middot; <span class="cv-pub-venue">ICRA 2025</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">Gaussian Splatting in Style</div>
+            <div class="cv-pub-authors">A. Saroha, M. Gladkova, C. Curreli, <b>D. Muhle</b>, T. Yenamandra, D. Cremers &middot; <span class="cv-pub-venue">GCPR 2024</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">Boosting Self-Supervision for Single-View Scene Completion via Knowledge Distillation</div>
+            <div class="cv-pub-authors">K. Han, <b>D. Muhle</b>, F. Wimbauer, D. Cremers &middot; <span class="cv-pub-venue">CVPR 2024</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">S4C: Self-Supervised Semantic Scene Completion with Neural Fields</div>
+            <div class="cv-pub-authors">A. Hayler, F. Wimbauer, <b>D. Muhle</b>, C. Rupprecht, D. Cremers &middot; <span class="cv-pub-venue">3DV 2024, Spotlight</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">Learning Correspondence Uncertainty via Differentiable Nonlinear Least Squares</div>
+            <div class="cv-pub-authors"><b>D. Muhle</b>, L. Koestler, K. M. Jatavallabhula, D. Cremers &middot; <span class="cv-pub-venue">CVPR 2023</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">The Probabilistic Normal Epipolar Constraint for Frame-To-Frame Rotation Optimization under Uncertain Feature Positions</div>
+            <div class="cv-pub-authors"><b>D. Muhle</b>, L. Koestler, N. Demmel, F. Bernard, D. Cremers &middot; <span class="cv-pub-venue">CVPR 2022</span></div>
+        </div>
+
+        <div class="cv-pub">
+            <div class="cv-pub-title">Düngereinrichtung, Bewässerungssystem sowie Verfahren zum Betreiben eines Bewässerungssystems</div>
+            <div class="cv-pub-authors">F. Dinkelacker, <b>D. Muhle</b>, S. Muhle, M. Schlinger &middot; <span class="cv-pub-venue">Patent Nr. 10201714740</span></div>
+        </div>
+    </details>
+
+    <!-- Scholarships -->
+    <details class="cv-section">
+        <summary>Selected Scholarships</summary>
+
+        <div class="cv-entry">
+            <div class="cv-date">11/2019 &ndash; 10/2020</div>
+            <div class="cv-body">
+                <p class="cv-role">Deutschlandstipendium <span class="cv-org">&middot; TUM</span></p>
+                <p>Financial scholarship for excellent students, financed in equal parts by the private sector and the state.</p>
+            </div>
+        </div>
+
+        <div class="cv-entry">
+            <div class="cv-date">10/2019 &ndash; 10/2021</div>
+            <div class="cv-body">
+                <p class="cv-role">best.in.tum <span class="cv-org">&middot; TUM</span></p>
+                <p>Promotion of outstanding students at the Department of Informatics.</p>
+            </div>
+        </div>
+
+        <div class="cv-entry">
+            <div class="cv-date">03/2017 &ndash; 10/2017</div>
+            <div class="cv-body">
+                <p class="cv-role">UnternehmerTUM [x]</p>
+                <p>Financial support for FlowerAI.</p>
+            </div>
+        </div>
+    </details>
+
+    <!-- Others -->
+    <details class="cv-section">
+        <summary>Others</summary>
+
+        <div class="cv-entry">
+            <div class="cv-date">2013 &ndash; 2015</div>
+            <div class="cv-body">
+                <p class="cv-role">Summer Camp Tutor <span class="cv-org">&middot; Eichholzer Täle</span></p>
+                <p class="cv-meta">Sindelfingen, Germany</p>
+            </div>
+        </div>
+
+        <div class="cv-entry">
+            <div class="cv-date">2013</div>
+            <div class="cv-body">
+                <p class="cv-role">Intel Leibniz Challenge</p>
+                <p>Participated with great success.</p>
+            </div>
+        </div>
+    </details>
+
+</div>

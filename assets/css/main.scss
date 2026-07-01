@@ -613,3 +613,279 @@ img-comparison-slider.rendered [slot='second'] {
     background-color: #5a6268;
     color: #fff;
 }
+
+// CV page styles
+.cv {
+    font-family: "Lato", Verdana, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem 4rem;
+    color: #1a1a1a;
+
+    .cv-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.5rem 1.5rem;
+        border-bottom: 3px solid firebrick;
+        padding-bottom: 1rem;
+        margin-bottom: 0.5rem;
+
+        .cv-name {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .cv-subtitle {
+            color: #555;
+            font-size: 1.05rem;
+            font-weight: 400;
+        }
+    }
+
+    .cv-contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem 1.25rem;
+        font-size: 0.95rem;
+        color: #444;
+
+        a {
+            color: #444;
+
+            &:hover { color: firebrick; text-decoration: underline; }
+        }
+
+        i { color: firebrick; margin-right: 0.35rem; }
+    }
+
+    // Collapsible sections
+    .cv-section {
+        margin-top: 1rem;
+
+        > summary {
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: firebrick;
+            padding-bottom: 0.35rem;
+            border-bottom: 1px solid #e3e3e3;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            user-select: none;
+
+            // Hide native disclosure triangle
+            &::-webkit-details-marker { display: none; }
+            &::marker { content: ""; }
+
+            &::before {
+                content: "\F285"; // bootstrap-icons chevron-right
+                font-family: "bootstrap-icons";
+                font-size: 0.85rem;
+                color: firebrick;
+                transition: transform 0.2s ease;
+            }
+
+            &:hover { color: #a01a1a; }
+        }
+
+        &[open] > summary::before { transform: rotate(90deg); }
+
+        > *:not(summary) { margin-top: 1rem; }
+    }
+
+    // Timeline entries
+    .cv-entry {
+        display: grid;
+        grid-template-columns: 8.5rem 1fr;
+        gap: 0.25rem 1.5rem;
+        padding-bottom: 1.25rem;
+
+        &:last-child { padding-bottom: 0; }
+    }
+
+    .cv-date {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #777;
+        padding-top: 0.15rem;
+        white-space: nowrap;
+    }
+
+    .cv-body {
+        .cv-role {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .cv-org {
+            font-weight: 400;
+            color: firebrick;
+        }
+
+        .cv-meta {
+            color: #666;
+            font-size: 0.92rem;
+            margin: 0.1rem 0 0.35rem;
+        }
+
+        ul {
+            margin: 0.35rem 0 0;
+            padding-left: 1.1rem;
+
+            li {
+                font-size: 0.95rem;
+                margin-bottom: 0.15rem;
+            }
+        }
+
+        p { margin: 0.2rem 0 0; font-size: 0.95rem; }
+    }
+
+    // Publications
+    .cv-pub {
+        padding-bottom: 0.9rem;
+        border-left: 3px solid #e8e8e8;
+        padding-left: 0.9rem;
+        margin-bottom: 0.9rem;
+
+        &:last-child { margin-bottom: 0; }
+
+        .cv-pub-title { font-weight: 700; font-size: 1rem; }
+
+        .cv-pub-authors {
+            color: #555;
+            font-size: 0.9rem;
+
+            b { color: #1a1a1a; }
+        }
+
+        .cv-pub-venue { color: firebrick; font-weight: 700; }
+    }
+
+    // Sub-heading (Languages / Technical Skills)
+    .cv-subhead {
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0 0 0.6rem;
+    }
+
+    // Languages grid
+    .cv-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 0.5rem 2rem;
+
+        &.cv-languages { margin-bottom: 1.5rem; }
+
+        .cv-grid-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px dotted #ddd;
+            padding: 0.3rem 0;
+            font-size: 0.95rem;
+
+            .cv-grid-val {
+                color: #777;
+                font-size: 0.88rem;
+                text-align: right;
+                padding-left: 1rem;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    // Skill pills
+    .cv-skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        .cv-skill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #f5f5f5;
+            border-radius: 999px;
+            padding: 0.3rem 0.85rem;
+            font-size: 0.9rem;
+
+            .dot {
+                width: 0.55rem;
+                height: 0.55rem;
+                border-radius: 50%;
+                background: firebrick;
+                display: inline-block;
+            }
+
+            &.good .dot { background: #d99; }
+        }
+    }
+
+    // Skill proficiency legend
+    .cv-skill-legend {
+        display: flex;
+        gap: 1.25rem;
+        font-size: 0.82rem;
+        color: #999;
+        margin-top: 0.6rem;
+
+        span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .dot {
+            width: 0.55rem;
+            height: 0.55rem;
+            border-radius: 50%;
+            display: inline-block;
+            background: firebrick;
+
+            &.good { background: #d99; }
+        }
+    }
+
+    // Download button
+    .cv-download {
+        text-align: center;
+        margin-top: 3rem;
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 1.5px solid firebrick;
+            color: firebrick;
+            padding: 0.55rem 1.4rem;
+            border-radius: 6px;
+            font-weight: 700;
+            transition: all 0.2s ease;
+
+            &:hover { background: firebrick; color: #fff; text-decoration: none; }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .cv {
+        .cv-entry {
+            grid-template-columns: 1fr;
+            gap: 0.1rem;
+        }
+
+        .cv-date { padding-top: 0; }
+
+        .cv-header .cv-name { font-size: 1.9rem; }
+    }
+}
